@@ -1,0 +1,226 @@
+html, body {
+    height: 100%;
+}
+body{
+    margin: 0;
+    text-align: center;
+    background-image: url('https://tinyurl.com/28cpexbv');
+    background-size: cover;
+    background-position-x: center;    
+    background-attachment: fixed;
+}
+.main {
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 0 auto;
+    color: #277B0E;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: large;
+    color: #277B0E;
+}
+h1 {
+    font-size: 50px;
+    line-height: 52px;
+}
+.top {
+    width: 50%;
+    height: 45vh;
+}
+.type{
+    border: 1px solid gold;
+    padding: 3px;
+}
+#inTab {
+    width: 550px;
+    margin: 0 auto;
+}
+table td {
+    padding: 5px;
+    line-height: 30px;
+}
+.img {
+    height: 100%;
+    position: absolute;
+    left: -5%;
+}
+.imgtd {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.left {
+    text-align: left;
+}
+.dir {
+    cursor: pointer;
+    border: 2px solid #277B0E;
+    font-size: 20px;
+}
+span.stars span {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background: url('../src/stars_big.png') 0 -32px repeat-x;
+    width: 120px;
+    height: 24px;
+}
+span.stars span {
+    background-position: 0 0;
+}
+
+.no {
+    height: 32px;
+    filter: grayscale();
+}
+.yes {
+    height: 32px;
+    filter: none;
+    cursor: pointer;
+}
+#sp {
+    cursor: pointer;
+}
+#rr,#sp {
+    line-height: 37px;
+    vertical-align: top;
+}
+.unfav {
+    position: sticky;
+    left: 90%;
+    bottom: 11%;
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+    border: 2px solid #277B0E;
+    color: #277B0E;
+    font-size: 15px;
+    line-height: 15px;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.unfav:hover {
+    background-color: #277B0E;
+    color: white;
+    transition: 250ms;
+}
+.fav {
+    position: sticky;
+    left: 90%;
+    bottom: 11%;
+    height: 30px;
+    width: 30px;
+    background-color: #277B0E;
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+    cursor: pointer;
+    border: 2px solid #277B0E;
+    box-sizing: content-box;
+    padding: 15px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #277B0E;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .rad {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .radio:hover input ~ .rad {
+    background-color: #ccc;
+  }
+  .radio input:checked ~ .rad {
+    background-color: #277B0E;
+  }
+  .rad:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .radio input:checked ~ .rad:after {
+    display: block;
+  }
+  .radio .rad:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Change Email Verification Mail</title>
+</head>
+<body>
+<div>
+	親愛的會員 ${userName}，您好：
+</div>
+<br>
+<div>
+	如果您沒有在&nbsp;<a href="http://localhost:8080/GroupOne/">天食地栗</a>&nbsp;提交修改email的請求，請忽略並刪除這封郵件。
+</div>
+<br>
+<div>
+	您由原本的email：${userEmail}&nbsp;修改為新的email：${editEmail}。
+</div>
+<br>
+<div>
+	當您收到此驗證信後，點擊下方連結以修改您的email為&nbsp;${editEmail}&nbsp;：
+</div>
+<br>
+<div>
+	<a href="http://localhost:8080/GroupOne/verify/editEmail?code=${code}">
+	http://localhost:8080/Final/verify/editEmail?code=${code}
+	</a>
+</div>
+<br>
+<div>
+	若無法點擊連結，請複製連結內容至新的瀏覽器視窗開啟。
+</div>
+<br>
+<div>
+	以後我們會將相關通知寄送至您新的信箱&nbsp;${editEmail}。
+</div>
+<br>
+<div>
+	天食地栗感謝您。
+</div>
+<br>
+<div>
+	<img src="cid:pureskyco" width="200px">
+</div>
+</body>
+</html>

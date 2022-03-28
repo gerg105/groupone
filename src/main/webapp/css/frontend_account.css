@@ -1,0 +1,124 @@
+/*account(bootstrap)*/
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav {
+	min-width: 250px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+
+.img-circle img {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 5px solid #fff;
+}
+.nav-pills a.active{
+    background:#088178 !important; /*override bootstrap*/
+}
+/*fav*/
+
+.pro-container{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    text-align:center;
+}
+.pro{
+    width: 25%;
+    min-width:200px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    position: relative /*下方購物車圖示*/;
+    margin-bottom:15px;
+}
+.pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+.pro .des{
+    text-align: start;
+    padding: 10px 0;   
+}
+.pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+.pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+.pro .des i{
+    color: rgb(243, 181, 25);
+    font-size: 12px;
+}
+.pro .des .spec{
+    color: rgb(243, 181, 25);
+    font-size: 12px;
+}
+
+.pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+.pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.vip{
+	display:flex; 
+	justify-content:center;
+}
+
+.lv-0{
+	color:#A7B8BF;
+}
+.lv-1{
+	color:#C0A36B;
+}
+.lv-2{
+	color:#84f5a0;
+}
+.lv-3{
+	color:#896ABA;
+}

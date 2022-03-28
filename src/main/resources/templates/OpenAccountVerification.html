@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Open Account Verification Mail</title>
+</head>
+<body>
+<div>
+	親愛的會員 ${userName}，您好：
+</div>
+<br>
+<div>
+	感謝您申請成為天食地栗的會員，為確認您的email無誤，當您收到此驗證信後，點擊下方圖片以啟動您的會員帳號。
+</div>
+<br>
+<div>
+	若您沒有在&nbsp;<a href="http://localhost:8080/GroupOne/">天食地栗</a>&nbsp;申請會員，請忽略並刪除此郵件。
+</div>
+<br>
+<div>
+	<a href="http://localhost:8080/GroupOne/verify/account?code=${code}">
+		<img src="cid:pureskyco" title="天食地栗" alt="天食地栗" width="200px">
+	</a>
+</div>
+</body>
+</html>

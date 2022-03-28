@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forget Pwd Mail</title>
+</head>
+<body>
+<div>
+	親愛的會員 ${userName}，您好：
+</div>
+<br>
+<div>
+	如果您沒有在&nbsp;<a href="http://localhost:8080/GroupOne/">天食地栗</a>&nbsp;提交忘記密碼的請求，請忽略並刪除這封郵件。
+</div>
+<br>
+<div>
+	若您提交了&nbsp;<b>忘記密碼</b>&nbsp;的請求，請點選下方連結獲取臨時密碼來協助您登入：
+</div>
+<div>
+	<a href="http://localhost:8080/GroupOne/relogin?code=${code}">
+		http://localhost:8080/GroupOne/relogin?code=${code}
+	</a>
+</div>
+<div>
+	並請您在登入成功後，修改您的密碼。
+</div>
+<br>
+<div>
+	若無法點擊連結，請複製連結內容至新的瀏覽器視窗開啟。
+</div>
+<br>
+<div>
+	天食地栗感謝您。
+</div>
+<br>
+<div>
+	<img src="cid:pureskyco" width="200px">
+</div>
+</body>
+</html>
